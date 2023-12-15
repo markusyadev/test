@@ -1,0 +1,3 @@
+{"name":"adawdawd","surname":"adwdawd","email":"adawdawd","password":"adawdaw","phonenumber":"adwdawd"}
+{"name":"hello","surname":"for everyone","email":"from","password":"github","phonenumber":":)"}
+{"name":"have","surname":"a nice","email":"day","password":"everyone","phonenumber":":3"}

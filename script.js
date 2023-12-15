@@ -1,11 +1,22 @@
-const http = require('node:http');
-const hostname = '127.0.0.1';
-const port = 3000;
-const server = http.createServer((req, res) => {
-  res.statusCode = 200;
-  res.setHeader('Content-Type', 'text/plain');
-  res.end('Hello World\n');
-});
-server.listen(port, hostname, () => {
-  console.log(`Server running at http://${hostname}:${port}/`);
-});
+function sendinfo(){
+let info = {
+  name : document.getElementById('name').value,
+  surname: document.getElementById('surname').value,
+  email : document.getElementById('email').value,
+  password : document.getElementById('password').value,
+  phonenumber : document.getElementById('phonenumber').value,
+};
+
+
+let res = fetch('/registration',{
+  method:'POST',
+  headers: {
+    'Content-Type': 'application/json'
+  },
+  body: JSON.stringify(info)
+
+})
+}
+let send_button = document.getElementById('send_button')
+
+send_button.addEventListener('click',sendinfo)
