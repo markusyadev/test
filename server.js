@@ -9,8 +9,8 @@ app.listen(3000, () => {
     console.log('Succes')
 })
 
-app.post('/registration',(req,res) => {
+app.post('/stats',(req,res) => {
     console.log(req.body)
-    appendFileSync('info.txt',JSON.stringify(req.body) + '\n')
+    appendFileSync('stats.txt',JSON.stringify(req.body) + '\n')
     
 })
